@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consulta</title>
+    <link rel="stylesheet" href="../CSS/front_agendamentos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="#">Agendamentos</a></li>
+            <li><a href="#">Cadastro de Funcionários</a></li>
+            <li><a href="#">Registro de Agendamentos</a></li>
+            <li><a href="#">Histórico de Pacientes</a></li>
+            <li><a href="#">Exames</a></li>
+            <li><a href="#">Disponibilidade de Horários</a></li>
+        </ul>
+        <i class="fas fa-user"></i> Administrador<br>
+        <i class="fas fa-sign-out-alt"></i>Logout<br>
+    </div>
+    
+    <div class="container">
+        <h1>
+            <img src="../IMG/Design_Medical_Assistance02.png"">
+        </h1>
+        <div class="form">
+            <form class="flex flex--coluna" data-form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required data-nome>                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required data-email>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required data-telefone> >
+
+                <label for="medico">Médico:</label>
+                <input type="medico" id="medico name="medico" required data-medico>
+                
+                <label for="data">Data da Consulta:</label>
+                <input type="date" id="data" name="data" required data-data>
+                
+                <label for="horario">Horário da Consulta:</label>
+                <select id="horario" name="horario" required data-horario="">
+                    <option value="" disabled selected>Selecione o horário</option>
+                    <option value="08:00">08:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+            
+                <button id="botaoAgendar" type="submit">Agendar</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script  type="module" src="../controller/NovoAgendamento-controller.js" defer></script>
+</body>
+</html>

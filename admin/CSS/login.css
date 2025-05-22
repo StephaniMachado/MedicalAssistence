@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    width: 300px; /* Define uma largura padrão para o contêiner */
+}
+
+/* Estilização do h1 */
+h1 {
+    position: absolute;
+    left: 50px; /* Encostado no canto esquerdo */
+    top: 6%; /* Ajuste vertical */
+    transform: translateY(-50%);
+}
+
+h1 img {
+    width: 200px; /* Tamanho da imagem */
+}
+
+/* Ajustando os campos de entrada e o botão para terem o mesmo tamanho */
+input,
+button {
+    width: 90%; /* Define mesma largura para os elementos */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+}
+
+input {
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+
+button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #800000;
+}

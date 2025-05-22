@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Agendamentos</title>
+    <link rel="stylesheet" href="../CSS/registro_agendamento.css">
+    <!-- Link para o FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="#">Agendamentos</a></li>
+            <li><a href="#">Cadastro de Funcionários</a></li>
+            <li><a href="#">Registro de Agendamentos</a></li>
+            <li><a href="#">Histórico de Pacientes</a></li>
+            <li><a href="#">Exames</a></li>
+            <li><a href="#">Disponibilidade de Horários</a></li>
+        </ul>
+        <i class="fas fa-user"></i> Administrador<br>
+        <i class="fas fa-sign-out-alt"></i> Logout<br>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h2>Lista de Agendamentos</h2>
+        <table class="tabelaAgendamentos">
+            <thead>
+                <tr>
+                    <th class="coluna-paciente">Paciente</th>
+                     <th class="coluna-email">Email</th>
+                     <th class="coluna-medico">Médico</th>
+                    <th class="coluna-data">Data</th>
+                    <th class="coluna-horario">Horário</th>
+                     <th class="coluna-telefone">Telefone</th>
+                     <th>-</th>
+                     <th>-</th>
+                </tr>
+            </thead>
+            <tbody data-tabela>
+               
+            </tbody>                
+        </table>
+    </div>
+    
+</body>
+<script type="module" src="../controller/pacientes_controller.js"></script>
+</html>

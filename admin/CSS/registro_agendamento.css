@@ -1,0 +1,143 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 150px;
+    background-color: #800000;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 90px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Barra vermelha no topo cobrindo os botões e título */
+.titulo-container {
+    background-color: #800000;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Fixa no topo */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Garante que fique acima de outros elementos */
+}
+
+.titulo-container h2 {
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Ajuste do conteúdo para evitar sobreposição */
+.container {
+    margin-top: 80px; /* Ajustado para não ficar sobre a barra vermelha */
+    margin-left: 170px; /* Ajustado para encaixar a barra lateral */
+    padding: 20px;
+    width: calc(100% - 170px);
+}
+
+/* Estilização da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #800000;
+    color: white;
+}
+
+/* Ajuste para os botões dentro da tabela */
+.tabela__botoes-controle {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* Todos os botões com a mesma largura */
+.botao-simples {
+    width: 120px; /* Define um tamanho fixo */
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Estilização específica para o botão Editar */
+.botao-simples--editar {
+    background-color: #007bff;
+    color: white;
+}
+
+.botao-simples--editar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilização específica para o botão Excluir */
+.botao-simples--excluir {
+    background-color: #dc3545;
+    color: white;
+}
+
+.botao-simples--excluir:hover {
+    background-color: #a71d2a;
+}
+
+/* Ajuste para o logo */
+.container h1 img {
+    width: 180px;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #800000;
+}
